@@ -12,6 +12,9 @@ def multiplicar(num1, num2):
     return num1 * num2
 
 def divide(num1, num2):
+    if num2 ==0:
+        print("No se puede dividir entre 0")
+        num2 =1
     return num1/num2
 
 def return_values():
@@ -22,6 +25,8 @@ def return_values():
 if __name__ == '__main__':
     message = f"calculadora: \n Elige una opcion\n1 - suma\n2 - resta\n3 - multiplicar\n4 - divide\n"
     while True:
+        clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
+       
         opcion = int(input(message))
         #comparar cada una de las opciones y llamar a la funcion correcta 
         if opcion == 1:
@@ -43,7 +48,7 @@ if __name__ == '__main__':
             #Pedir numeros al usuario 
             numeros = return_values()
             resultado_divide = divide(numeros[0], numeros[1])
-            print("El resultado de la division es", resultado_divide)
+            print("El resultado de la division es", resultado_divide)           
         elif opcion == 5:
             print('Bye!!')
             break
@@ -51,7 +56,6 @@ if __name__ == '__main__':
             print("Opcion Incorrecta")
 
 
-
-clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
-
 clearConsole()
+
+
