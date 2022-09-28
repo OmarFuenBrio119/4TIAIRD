@@ -1,5 +1,6 @@
 from email import message
 from email.errors import MessageError
+import os
 
 def suma(num1, num2):
     return num1 + num2
@@ -48,3 +49,9 @@ if __name__ == '__main__':
             break
         else:
             print("Opcion Incorrecta")
+
+
+
+clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
+
+clearConsole()
