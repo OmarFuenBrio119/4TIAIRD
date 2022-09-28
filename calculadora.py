@@ -21,13 +21,13 @@ if __name__ == '__main__':
         if opcion == 1:
             resultado_suma = suma(23, 66)
             print("El resultado de la suma es", resultado_suma)
-        if opcion == 2:
+        elif opcion == 2:
             resultado_resta = resta(23, 66)
             print("El resultado de la resta es", resultado_resta)
-        if opcion == 3:
+        elif opcion == 3:
             resultado_multiplicar = multiplicar(23, 66)
             print("El resultado de la multiplicacion es", resultado_multiplicar)
-        if opcion == 1:
+        elif opcion == 4:
             resultado_divide = divide(23, 66)
             print("El resultado de la division es", resultado_divide)
         elif opcion == 5:
